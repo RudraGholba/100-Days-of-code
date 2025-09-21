@@ -1,22 +1,13 @@
-//Work in progress
 #include <stdio.h>
 int main()
 {
     int s;
     printf("Enter time in seconds.\n");
     scanf("%d",&s);
-    int m;
-    int h;
-    if (s>60){
-        while(m>60){
-            m=s/60;
-        }
-        if (m>60){
-            while(h>60){
-                h=m/60;
-            }
-        }
-    }
-    printf("Hour=%d, Minute=%d, Second=%d",h,m,s);
+    int m,h;
+    float h1,m1;
+    h1=s/3600;
+    m1=s/60;
+    printf("Hour=%.2f, Minute=%.2f, Second=%d",h1,m1,s);
     return 0;
 }
